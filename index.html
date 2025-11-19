@@ -88,8 +88,8 @@
             let progress = 0;
             const progressElement = document.getElementById('progress');
             const intervalTime = 50; // 50ms interval
-            const totalDuration = 5000; // 5 detik
-            const increment = 50 / (totalDuration / intervalTime);
+            const totalDuration = 3000; // 3 detik
+            const increment = 100 / (totalDuration / intervalTime);
 
             const progressInterval = setInterval(() => {
                 if (progress < 50) {
@@ -97,7 +97,7 @@
                     progressElement.textContent = `${Math.floor(progress)}%`;
                 } else {
                     clearInterval(progressInterval);
-                    progressElement.textContent = '50%'; // Pastikan progress mencapai 50%
+                    progressElement.textContent = '100%'; // Pastikan progress mencapai 100%
                 }
             }, intervalTime);
 
@@ -112,4 +112,5 @@
     
 </body>
 </html>
+
 
